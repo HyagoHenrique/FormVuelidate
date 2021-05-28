@@ -26,13 +26,19 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
+    '@nuxtjs/axios',
   ],
+
+  axios: {
+    baseURL: 'https://1caab2c59a9b.ngrok.io/api/v1',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
